@@ -1,0 +1,9 @@
+{
+  "name": "examplenodeapp",
+  "description": "Example Express Node.js app.",
+  "author": "Lucien NTUMBA <lucien_ntumba@ntumbamuamba.com>",
+  "dependencies": {
+    "express": "3.x.x"
+  },
+  "engine": "node >= 6.11.3"
+}

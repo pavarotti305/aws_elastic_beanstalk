@@ -1,0 +1,6 @@
+- hosts: ditelk3
+  become: true
+
+  roles:
+    - nodejs_install
+    - start_demo

@@ -1,0 +1,8 @@
+---
+# tasks file for deploy_code
+    - name: Copy example Node.js app to Server.
+      copy: "src=files dest={{ node_apps_location }}"
+
+    - name: Start example Node.js app.
+      command: "forever start {{ node_apps_location}}/files/app.js"
+      when: "forever_list.stdout.find('{{ node_apps_location }}/files/app.js') == -1"
